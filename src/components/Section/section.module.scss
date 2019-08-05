@@ -1,0 +1,29 @@
+@import '../../stylesheets/colors';
+@import '../../stylesheets/common';
+
+.SectionExcerpt{
+    @extend %fontSizeLarge;
+    @extend %gapBottom;
+    color:$primary-color;
+}
+.SectionItem{
+    @extend %border;
+    @extend %fontSizeNormal;
+    @extend %gapBottom;
+    @extend %paddingNormal;
+    text-align:left;
+    overflow:auto;
+
+    a{
+        color:$primary-color;
+        text-decoration:none;
+    }
+
+    img{
+        @extend %border;
+        float:left;
+        padding: 1px;
+        height:100px;
+        margin-right: 10px;
+    }
+}

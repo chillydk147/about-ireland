@@ -1,0 +1,52 @@
+@import '../../stylesheets/colors';
+@import '../../stylesheets/common';
+
+.sectionDirectoryItem{
+    @extend %border;
+    @extend %fontSizeNormal;
+    @extend %gapBottom;
+    @extend %paddingNormal;
+    overflow:auto;
+
+    a, span{
+        color:$primary-color;
+        text-decoration:none;
+    }
+
+    .sectionDirectoryImage img{
+        @extend %border;
+        width:200px;
+        float:right;    
+        padding: 1px;
+    }
+
+    .sectionDirectoryTitle{
+        @extend %fontSizeLarge;
+        color:$primary-color;
+        font-weight: bold;
+    }    
+}
+
+.sectionDirectorySelect{
+    @extend %border;
+    @extend %fontSizeNormal;
+    @extend %paddingSmall;    
+}
+
+.sectionDirectoryNavButtons{
+    @extend %gapBottomTop;
+    text-align: right;
+
+    span{
+        @extend %paddingSmall;
+        background-color: $primary-color;
+        border: 3px solid lighten( $primary-color, 10% );
+        color:#FFF;
+        cursor: pointer;
+        margin-left: 5px;
+    }
+}
+
+.sectionDirectoryShowing{
+    @extend %fontSizeNormal;
+}

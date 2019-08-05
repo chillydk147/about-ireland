@@ -1,0 +1,37 @@
+@import '../../stylesheets/colors';
+@import '../../stylesheets/common';
+
+.Header {
+    @extend %container;
+    background: transparent;
+    color: #fff;
+
+    .HeaderImage{
+        width:100%;
+        margin-bottom: 0;
+    }
+
+    .Navigation{
+        @extend %border;
+        @extend %gapBottom;
+    
+        .NavigationItem{
+            text-align: center;
+            background:$light-grey;
+            padding-top:10px;
+            padding-bottom:10px;
+            border: 1px solid #FFF;
+        }
+        .NavigationItem:hover{
+            background: $grey;
+            cursor:pointer;
+        }
+        .NavigationItem a{
+            @extend %fontSizeNormal;
+            text-transform:uppercase;
+            text-decoration:none;
+            color:#000;
+            font-weight:700;
+        }
+    }
+}

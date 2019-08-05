@@ -1,0 +1,26 @@
+@import '../../stylesheets/colors';
+@import '../../stylesheets/common';
+
+.relatedContent{
+	@extend %gapTop;
+
+	.relatedContentGroupName{
+		@extend %gapBottomTopSmall;
+		@extend %paddingSmall;
+		background-color:$primary-color;
+		color:#fff !important;		
+	}
+
+	.relatedContentItem {
+		@extend %border;
+		@extend %gapBottom;
+		@extend %paddingNormal;
+		@extend %fontSizeNormal;
+		overflow:auto;
+	
+		a{
+			color:$primary-color;
+			text-decoration:none;
+		}
+	}
+}

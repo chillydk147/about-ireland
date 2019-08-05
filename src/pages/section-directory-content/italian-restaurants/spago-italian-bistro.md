@@ -1,0 +1,10 @@
+---
+title: "Spago Italian Bistro"
+address: "Portlaoise Heritage Hotel, Jessop Street, Portlaoise, Co. Laois"
+tel: "+353 (0)57 867 8588"
+county: "Laois"
+category: "Italian Restaurants"
+type: "Content"
+lat: "53.034645080566406"
+lng: "-7.298871040344238"
+---
