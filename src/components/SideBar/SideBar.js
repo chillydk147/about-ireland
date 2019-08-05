@@ -2,7 +2,7 @@ import React from "react";
 import sidebarStyles from './sidebar.module.scss';
 
 const SideBar = ({sections}) => (
-    <div id="abcd" className={sidebarStyles.SideBar}>
+    <div className={sidebarStyles.SideBar}>
         {sections.map(({node}, key)=>{
             const {image} = node.frontmatter;
             const {slug} = node.fields;
